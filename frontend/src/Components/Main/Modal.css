@@ -1,0 +1,96 @@
+/* src/components/Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px; /* Ensure width and height are the same for a round button */
+    border-radius: 50%; /* Makes the button round */
+    text-align: center; /* Center the text/icon inside the button */
+    line-height: 50px; /* Vertically center the text/icon */
+}
+
+.close-button:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+  .modal-content img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+  }
+  
+  .pay-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pay-button:hover {
+    background-color: #218838;
+  }
+  .slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+.payment-box{
+  display: flex;
+  padding-left: 10%;
+}
+
+.range-container{
+  padding-top: 1.8%;
+  padding-left: 16%;
+}
+
+.total-price{
+  padding-top: 3%;
+  padding-left: 10%;
+}
+

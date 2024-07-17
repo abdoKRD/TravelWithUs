@@ -1,0 +1,151 @@
+.parent-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 50px;
+  height: 500px;
+  z-index: 1;
+}
+
+.first {
+  justify-content: center;
+  width: 50%;
+  display: flex;
+}
+
+.first h1 {
+  color: #ffffff; /* Ensure good contrast with the background */
+  font-size: 3em; /* Adjust the size to make it prominent */
+  font-family: 'Roboto', sans-serif; /* Choose a clean and modern font */
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Add some spacing around the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+  background: linear-gradient(to right, #18d1ff, #1ae8de); /* Gradient background */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text itself transparent */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.recover a{
+  color: rgb(220, 207, 207); 
+}
+
+.recover a:hover{
+  color: rgb(55, 101, 230); 
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Enhance the shadow on hover */
+
+}
+
+.first h1:hover {
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Enhance the shadow on hover */
+}
+
+.rememberMe{
+  color: #eaeaea;
+}
+
+.second {
+  width: 50%;
+}
+
+.second img {
+  border-radius: 40px;
+  height: 100%;
+}
+
+.first form {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-input {
+  background: transparent;
+  color: white;
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid ;
+  border-bottom: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: white; /* Change the color of the placeholder text */
+} 
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.btn-field {
+  padding-top: 2pc;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background: #3c00a0;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.other-button {
+  background: #eaeaea !important;
+  color: #555 !important;
+}
+
+.mdp{
+  gap: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mdpCont{
+  padding-top: 10px;
+}
